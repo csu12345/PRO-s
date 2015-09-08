@@ -135,16 +135,16 @@ public class Unit implements IUnit {
 			throw new RuntimeException("Assessment cutoffs cant be less than zero or greater than 100");
 		}
 		if (ae >= ps) {
-			throw new RuntimeException("AE cutoff must be less than PS cutoff");
+			throw new RuntimeException("AE cutoff Should be less than PS cutoff");
 		}
 		if (ps >= cr) {
-			throw new RuntimeException("PS cutoff must be less than CR cutoff");
+			throw new RuntimeException("PS cutoff Should be less than CR cutoff");
 		}
 		if (cr >= di) {
-			throw new RuntimeException("CR cutoff must be less than DI cutoff");
+			throw new RuntimeException("CR cutoff Should be less than DI cutoff");
 		}
 		if (di >= hd) {
-			throw new RuntimeException("DI cutoff must be less than HD cutoff");
+			throw new RuntimeException("DI cutoff Should be less than HD cutoff");
 		}
 
 	}
