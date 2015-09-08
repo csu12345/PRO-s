@@ -11,7 +11,8 @@ import org.jdom.JDOMException;
 public class XMLManager {
 private static XMLManager self = null;
 
-
+private Document doc;
+        public static XMLManager getXML() { if (self == null ) self = new XMLManager(); return self;
         
 }
     private XMLManager() {init();
